@@ -98,7 +98,7 @@ function Contact() {
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <img src={Sai} alt="Image" class="mb-4 img-fluid"/>
                 <h2 class="tm-text-primary mb-4" >Kota Sai</h2>
-                <h3 class="tm-text-secondary h5 mb-4">Waste Fellow</h3>
+                <h3 class="tm-text-secondary h5 mb-4">Backend Dev</h3>
                 <p class="mb-4">
                     Sed faucibus nec velit finibus accumsan. Sed varius augue et leo pharetra, in varius lacus eleifend. Quisque ut eleifend lacus.
                 </p>
@@ -111,7 +111,7 @@ function Contact() {
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <img src={Mohan} alt="Image" class="mb-4 img-fluid"/>
                 <h2 class="tm-text-primary mb-4">Konem Mohan Srinivas</h2>
-                <h3 class="tm-text-secondary h5 mb-4">Full Stack Dev</h3>
+                <h3 class="tm-text-secondary h5 mb-4">Frontend Dev</h3>
                 <p class="mb-4">
                     Nunc convallis facilisis congue. Curabitur gravida rutrum justo sed pulvinar. Pellentesque ac ante in erat bibendum dignissim.
                 </p>

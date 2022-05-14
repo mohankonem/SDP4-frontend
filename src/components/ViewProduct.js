@@ -11,6 +11,8 @@ import Img8 from "../img/img-11.jpg";
 import Hero from "../img/hero.jpg";
 import Header from './Header';
 import Footer from './Footer';
+import "../css/Feedback.css";
+
 export class ViewProduct extends Component {
     constructor(props) {
       super(props)
@@ -43,11 +45,65 @@ export class ViewProduct extends Component {
             <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
                 <div class="tm-bg-gray tm-video-details">
                     <p class="mb-4">
-                        Please support us by making <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a PayPal donation</a>. Nam ex nibh, efficitur eget libero ut, placerat aliquet justo. Cras nec varius leo.
+                        Please support us by making <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a PayPal donation</a>.
                     </p>
-                    <div class="text-center mb-5">
-                        <a href="#" class="btn btn-primary tm-btn-big">Feedback</a>
-                    </div>                    
+                    <div id="feedback-form-wrapper">
+  <div id="floating-icon">
+    <button type="button" class="btn btn-primary btn-sm rounded-0" data-toggle="modal" data-target="#exampleModal">
+      Feedback
+    </button>
+
+  </div>
+  <div id="feedback-form-modal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Feedback Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">How likely you would like to recommand us to your friends?</label>
+                <div class="rating-input-wrapper d-flex justify-content-between mt-2">
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">1</span></label>
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">2</span></label>
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">3</span></label>
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">4</span></label>
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">5</span></label>
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">6</span></label>
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">7</span></label>
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">8</span></label>
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">9</span></label>
+                  <label><input type="radio" name="rating" /><span class="border rounded px-3 py-2">10</span></label>
+                </div>
+                <div class="rating-labels d-flex justify-content-between mt-1">
+                  <label>Very unlikely</label>
+                  <label>Very likely</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="input-one">What made you leave us so early?</label>
+                <input type="text" class="form-control" id="input-one" placeholder=""/>
+              </div>
+              <div class="form-group">
+                <label for="input-two">Would you like to say something?</label>
+                <textarea class="form-control" id="input-two" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                   
                     <div class="mb-4 d-flex flex-wrap">
                         <div class="mr-4 mb-2">
                             <span class="tm-text-gray-dark">Dimension: </span><span class="tm-text-primary">1920x1080</span>
